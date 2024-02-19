@@ -1,0 +1,103 @@
+
+vegefoods-master
+
+============================================================================================================================================================================
+
+Database Design
+
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+Table name : admin
+
+table field : id, name, email, phone, role, photo, password, status, remember_token, email_verified_at
+-------------------------------------------------------------------------------------------------
+
+Table name : users 
+
+table field : id, name, email, phone, password, photo, remember_token, email_verified_at
+---------------------------------------------------------------------------------------------------
+
+Table name : services
+
+table field : id, name, description, icon
+--------------------------------------------------------------------------------------------------
+
+Table name : product
+
+table field : id, category_id, title, slug, summary, description, photo, stock, condition, status, price, discount
+----------------------------------------------------------------------------------------------------
+
+Table name : category
+
+table field : id, name, slug, status, photo
+-----------------------------------------------------------------------------------------------------
+
+Table name : contact
+
+table field : id, name, email, subject, message
+-----------------------------------------------------------------------------------------------------
+
+Table name : gallery
+
+tabel field : id, cat_id, image
+-----------------------------------------------------------------------------------------------------
+
+Table name : blogs
+
+table field : id, category_id, title, summary, decscription, photo, tags, added_by, status
+-----------------------------------------------------------------------------------------------------
+
+Table name : comments
+
+table field : id, post_id, user_id, comment, replied_comment
+---------------------------------------------------------------------------------------------------
+
+Table name : carts
+
+table field : id, user_id, product_id, quantity
+---------------------------------------------------------------------------------------------------
+
+Table name : checkout
+
+table field : id, first_name, last_name, country, state, address, city, zip_code, phone, email 
+-----------------------------------------------------------------------------------------------------
+
+Table name : favourite
+
+table field : id, user_id, product_id
+----------------------------------------------------------------------------------------------------
+
+Table name : faq
+
+table field : id, faq_type_id, question, answer
+----------------------------------------------------------------------------------------------------
+
+Table name : Faq_type
+
+table field : id, type_name
+----------------------------------------------------------------------------------------------------
+
+Table name : Pages
+
+table field : id, page_name, short_desc, page_code, page_url
+----------------------------------------------------------------------------------------------------
+
+Table name : Users_news_letter
+
+table field : id, email
+
+-----------------------------------------------------------------------------------------------------
+
+Table name : orders
+
+table field : id, user_id, order_number, sub_total, shipping_id, coupon, total_amount, quantity, payment_method, payment_status, status, first_name, last_name, email, phone, country, city, post_code, address1, address2
+
+-------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Table name : shippings
+
+table field : id, type, price, status
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
